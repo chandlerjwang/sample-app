@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'news_feed/top'
+
+  get 'news_feed/home'
+
   get '/signup', to: 'users#new'
   get '/help', to: 'static_pages#help'
   get '/contact', to: 'static_pages#contact'
